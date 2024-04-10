@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    
+    <title>ACCI</title>
+</head>
+
+<header class="header-main">
+    <div class="header-main-space"></div>
+    
+    <div class="header-main-menu">
+        <nav class="header-main-nav">
+            <ul>
+                <li><a href="#blank">RESOURCES</a></li> 
+                <li><a href="#blank">ABOUT US</a></li> 
+                <li><a href="contact.html">CONTACT US</a></li>
+                <div class="dropdown">
+                    <li class="cal"><a href="#blank"><img src="images/calendar.png" style="width: 6%" alt="A.C.C.I. Logo"></a></li>
+                    <li class="drop"><img src="images/menu.png" alt="Drop Down Menu, click to expand" style="width: 6%">
+                        <div class="ulmain">
+                            <ul class="sub-menu">
+                                <li><a href="about.html">ABOUT ACCREDITATION COUNCIL</a></li>
+                                <li><a href="standard.html">ACCREDITATION STANDARDS</a></li>
+                                <li><a href="process.html">PROCESS + GUIDELINES</a></li>
+                                <li><a href="#blank">APPLICATION</a></li>
+                                <li><a href="#blank">RESOURCES</a></li>
+                                <li><a href="contact.html">CONTACT US</a></li>
+                            </ul> 
+                        </div>
+                    </li> 
+                </div>
+            </ul>
+               <!--drop down menu here-->
+        
+        </nav>  
+    </div>
+</header>
+
+    <div class="logo">
+        <a href="index.html"><img src="images/ACCI_Logo.png"></a>
+    </div>
+
+    <body>
+
+
+        <h2 class="contact-title">CONTACT US</h2>
+        <div id="contact">
+            <div id="contact-info">
+                <ul>
+                    <li>accicoopintern@gmail.com</li>
+                    <li>Office Number: (xxx)xxx-xxxx</li>
+                    <li>Address: 123 Address Way City, State 12345</li>
+                </ul>
+                <img src="images/map.png" alt="Map of ACCI Headquarters">
+            </div>
+            <!--In order for the live Google Maps function to work ACCI needs a billing account, link here: https://developers.google.com/maps/billing-and-pricing/billing 
+            for now there will be a placeholder image. If this is a feature you are wanting I can code this as we move forward. -->
+        </div>
+
+        
+        
+        <!--CONTACT SHEET-->
+        <!--For email form to work: requires Formspree to gather submittions through a separte website 
+            or Web3forms where you can get an access key. 
+            I have provided the code if using Web3Forms with an access key... 
+            The access keys are free to create, here is the link: https://web3forms.com -->
+            
+        <!-- <form action="URL copied from Web3Forms" method="POST" class="contact">-->
+        <div class="contact-container">
+            <h3>GET IN TOUCH</h3>
+            <!-- <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">-->
+            <input type="text" name="name" placeholder="First and Last Name" alt="Type First Name" class="contact-input" required>
+            <input type="email" name="email" placeholder="Email Address" alt="Type Email" class="contact-input" required>
+            <input type="title" name="role" placeholder="Your Title/Role" alt="Type Your Title/Role" class="contact-input" required>
+            <textarea rows="5" cols="60" name="message" placeholder="Your Message..." alt="Type Your Message"  required></textarea>
+            <button type="submit">SUBMIT</button>
+            <!-- </form> once the form has been submitted the webpage will give teh viewer confirmation and a "go back" link will be 
+                apparent for the viewer to go back to the ACCI website-->
+        </div>
+
+        <!--for google maps code-->
+        <script src="script.js"></script>
+    </body>
+
+    <footer>
+        <p>Copyright © 2021, Accreditation Council for Co-op and Internships</p>
+    </footer>
+
+</html>
