@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="style.css" rel="stylesheet" type="text/css" />
+        <title>ACCI</title>
+        <script type="text/javascript" src="//code.jquery.com/jquery-1.9.1.js"></script>
+        
+        <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>        
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <script type="text/javascript">
+            <!-- JavaScript to slide images horizontally-->
+            $(window).load(function() {
+                $(".carousel .item").each(function() {
+                    var i = $(this).next();
+                    i.length || (i = $(this).siblings(":first")),
+                    i.children(":first-child").clone().appendTo($(this));
+                    
+                    for (var n = 0; n < 4; n++)(i = i.next()).length ||
+                    (i = $(this).siblings(":first")),
+                    i.children(":first-child").clone().appendTo($(this))
+                })
+            });
+        </script>
+    </head>
+
+    <div class="logo">
+        <a href="index.html"><img src="images/ACCI_Logo.png"></a>
+    </div>
+
+    <div class="wrapper">
+        <body>
+
+            <div id="row3">
+                <div class="row3-img">
+                    <img src="images/about.jpg" style="width: 500px">
+                </div>
+                <div class="row3-content">
+                    <h1>ACCREDITATION<br> STANDARDS</h1>
+                    
+                </div>
+            </div>
+    </div>
+
+            <div class="container">
+                <!--Bootstrap card with slider class-->
+                <div id="carousel-demo" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <div class="card-body">
+                                <h3>MISSION + GOALS</h3>
+                                <p>Cooperative education and academic internship programs are expected to have a mission and goals that clearly define its purpose in the context of its host institution.
+                                    Goals will describe how the mission will be achieved, how the mission and goals were developed and how they will be evaluated in concert with program effectiveness.</p>
+                                <button><a href="about.html">LEARN MORE</a></button>
+                            </div>
+                        </div>
+                        <div class="item">
+                                <div class="card-body">
+                                    <h3>INSTITUTIONAL RELATIONSHIPS</h3>
+                                    <p>Cooperative education and academic internship programs are expected to demonstrate how the institution has effectively included them as an integral part of the academic 
+                                        program and how it has implemented policies to achieve mission and goals.  Strong institutional relationships help to determine program quality. </p>
+                                    <button><a href="index.html">LEARN MORE</a></button>
+                                </div>
+                        </div>
+                        <div class="item">
+                            <div class="card-body">
+                                    <h3>EMPLOYER PARTNERSHIPS</h3>
+                                    <p>Cooperative education and academic internship programs effectively select, prepare, engage, and monitor employers so that students achieve learning outcomes consistent with 
+                                        program goals.  In addition, employers are included in periodic reviews of program effectiveness.  </p>
+                                    <button><a href="#blank">LEARN MORE</a></button>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card-body">
+                                    <h3>STUDENT LEARNING</h3>
+                                    <p>Cooperative education and academic internship programs are expected to provide an environment at employer locations that supports the achievement of student learning outcomes. 
+                                        In addition, the program demonstrates that a student learning and development approach guides preparation, reflection and monitoring activities. </p>
+                                    <button><a href="#blank">LEARN MORE</a></button>
+                                
+                            </div>
+                        </div>
+                        <div class="item">
+                        
+                                <div class="card-body">
+                                    <h3>ASSESSMENT + EVALUATION</h3>
+                                    <p>Cooperative education and academic internship programs demonstrate the effective use of the student learning assessment process for each work term. In addition, 
+                                        the program has an assessment process that evaluates its overall effectiveness and its impact upon its constituencies. </p>
+                                    <button><a href="#blank">LEARN MORE</a></button>
+                                </div>
+                
+                        </div>
+                    </div>
+                    <!--slider control for card-->
+                    <a class="left carousel-control" href="#carousel-demo" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+                    <a class="right carousel-control" href="#carousel-demo" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+                </div>
+            </div>
+
+        <div class="wrapper">
+
+            <div class="downloadables">
+                <div class="coop">
+                    <h2>CO-OP <br> STANDARDS</h2>
+                    <img src="images/coop.png" alt="CO-OP Education Standards Document">
+                    <button><a href="images/coop.png" download="ACCI_CO-OP_Standards">DOWNLOAD</a></button>
+                </div>
+                <div class="intern">
+                    <h2>INTERNSHIP STANDARDS</h2>
+                    <img src="images/intern.png" alt="Academic Internship Standards Document">
+                    <button><a href="images/intern.png" download="ACCI_Internship_Standards">DOWNLOAD</a></button>
+                </div>
+            </div>
+        </div>
+        
+    </body>
+
+    <footer>
+        <p>Copyright © 2021, Accreditation Council for Co-op and Internships</p>
+    </footer>
+
+</html>
